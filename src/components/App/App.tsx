@@ -22,7 +22,7 @@ export default function App() {
   const handleVote = (type: VoteType) => {
     setVotes({
       ...votes,
-      [type]: (votes[type] += 1),
+      [type]: votes[type] + 1,
     });
   };
 
